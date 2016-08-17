@@ -37,7 +37,8 @@ def main():
     p.join()
 
 
-    for i in range(len(jobs)):
+
+    for i in range(q.qsize()):
         print q.get()
         print results.next()
 
